@@ -1,0 +1,102 @@
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #007bff; /* Primary blue color */
+}
+
+.nav-link {
+    margin-right: 15px;
+    color: #007bff; /* Primary blue color */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.nav-link:hover {
+    color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.custom-width {
+    width: 1000px;
+    margin-bottom: 50px;
+}
+
+.custom-sidebar {
+    width: 250px;
+    background-color: #e9ecef; /* Light gray background */
+    border-right: 1px solid #dee2e6;
+    padding-top: 20px;
+    height: 100vh; /* Full viewport height */
+}
+
+.sidebar-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff; /* Primary blue color */
+}
+
+.list-group-item {
+    border: none;
+    padding: 15px 20px;
+    color: #343a40;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.list-group-item:hover {
+    background-color: #d1ecf1; /* Light blue background on hover */
+    color: #007bff; /* Primary blue color on hover */
+    transform: translateX(10px); /* Slightly move to the right on hover */
+}
+
+.list-group-item i {
+    margin-right: 10px;
+}
+
+.second-text {
+    color: #6c757d;
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.second-text:hover {
+    color: #007bff; /* Primary blue color on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+
+a {
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition for hover effects */
+}
+
+button {
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    color: #ffffff; /* White text on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+    transform: translateY(-2px); /* Slightly move up on hover */
+}
+
+.form-check-input {
+    width: 30px;
+    height: 30px;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
