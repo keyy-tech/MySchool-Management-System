@@ -10,4 +10,4 @@ urlpatterns = [
     path("read/", views.student_list, name="student_list"),
     path("profile/<int:pk>", views.student_detail, name="student_profile"),
     path("delete/<int:pk>", views.student_delete, name="student_delete"),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

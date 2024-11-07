@@ -1,6 +1,5 @@
 from django.core.validators import RegexValidator, EmailValidator
 from django.db import models
-
 from Class.models import Class
 
 
@@ -10,7 +9,7 @@ class Student(models.Model):
         regex=r"^[a-zA-Z]+$", message="Name must contain only letters."
     )
     profile_picture = models.ImageField(
-        upload_to="students/profile_pictures", blank=True, null=True
+        upload_to="students/profile_pictures", blank=True, null=True, default="media/students/Django Logo.jpg"
     )
     first_name = models.CharField(max_length=100, validators=[name_validator])
     last_name = models.CharField(max_length=100, validators=[name_validator])
@@ -50,8 +49,9 @@ class Student(models.Model):
     city = models.CharField(max_length=100, validators=[name_validator])
 
     # School Information
-    class_assigned = models.ForeignKey(Class, on_delete=models.CASCADE)
+    class_assigned = models.ForeignKey(Class, on_delete=models.CASCADE, null=True, blank=True)
     date_enrolled = models.DateField()
 
     def __str__(self):
-        return f"{self.first_name} {self.last_name}"
+        return f"{self.first_name} {self.last_name} - {self.class_assigned}"
+
