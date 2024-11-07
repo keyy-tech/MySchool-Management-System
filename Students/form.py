@@ -49,6 +49,7 @@ class StudentForm(forms.ModelForm):
                 }
             ),
             "gender": forms.Select(
+                choices=[('Male', 'Male'), ('Female', 'Female')],
                 attrs={"class": "form-control", "placeholder": "Gender"}
             ),
             "class_assigned": forms.Select(
